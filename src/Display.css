@@ -1,19 +1,42 @@
-.patient{
-    display: flex;
 
-}
-.avatar{
-    background-color: cadetblue;
-    color: white;
-    font-size: x-large;
-    border-radius: 50%;
-    text-align: center;
+.topholder{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 10px;
-    height: 80px;
-    width: 80px;
+    align-items: center;
+    width: 80%;
+  
+    
+    
+    
+}
+
+.results{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
-
+    flex-direction: column;
+    
+    
+    
 }
+h3{
+    color:darkblue;
+}
+@media only screen and (max-width: 765px) {
+    h3{
+        font-size: small;
+        font-weight: 300;
+        color:darkblue;
+    }
+    .results{
+        width: 100%;
+    }
+    .pagelabel{
+        width:100px;
+        font-size: small;
+    }
+  }
+  
+

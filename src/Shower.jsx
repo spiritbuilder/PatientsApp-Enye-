@@ -1,17 +1,16 @@
 import React from 'react'
+import Patient from "./Patient"
+import "./Shower.css"
 
 function Shower({group}) {
     return (
-        <div>
+        <div className="show">
+            <div className="shower">
             {group && group.map((patient)=>(
-                <div key={patient.phone} className="patient">
-                    <div className="avatar">
-                        {patient.FirstName[0]+""+patient.LastName[0]}
-                    </div>
-                    <div className="name">{patient.FirstName+" "+patient.LastName}</div>
-                    </div>
+                <Patient person = {patient}/>
                     
                 ))}
+        </div>
         </div>
     )
 }

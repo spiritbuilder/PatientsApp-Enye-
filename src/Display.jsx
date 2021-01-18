@@ -8,10 +8,15 @@ import Pagination from "./Pagination"
 function Display({patients}) {
 const [current, setcurrent] = useState(1)
 
+useEffect(()=>{
+  setcurrent(1)
+},[patients])
 
 const pagesize = 20
 const handlePageChange = page => {
+    
     setcurrent(page);
+
   }
 
   const getPageData = () => {
@@ -48,8 +53,10 @@ console.log(patients);
         
         <div>
         <div className="results">
-      <h3>All Patients Matching Your Search Criteria</h3>
+        <h3>All Patients Matching Your Search Criteria</h3>
       <div className="topholder">
+      
+      <div className="pagelabel">Page {current} of { Math.ceil(totalCount / pagesize) }</div>
           <div className="pagination">
           <Pagination
         itemsCount={totalCount}
@@ -57,11 +64,12 @@ console.log(patients);
         currentPage={current}
         onPageChange={handlePageChange} />
           </div>
-          <div className="pagelabel">page {current} of { Math.ceil(totalCount / pagesize) }</div>
-          
+              
       </div>
       
-        <Shower  group={data} />
+      <Shower  group={data} />
+      
+        
         
       
       
