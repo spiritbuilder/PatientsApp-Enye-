@@ -1,0 +1,19 @@
+.patient{
+    display: flex;
+
+}
+.avatar{
+    background-color: cadetblue;
+    color: white;
+    font-size: x-large;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+}

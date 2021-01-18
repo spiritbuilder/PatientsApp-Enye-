@@ -1,0 +1,27 @@
+h1{
+    color: darkblue;
+}
+.header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: darkblue;
+}
+.topsearchbar{
+    font-size: larger;
+    width:500px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 15px ;
+    border: 2px solid orange;
+}
+.searchbtn{
+    padding:14px;
+    font-size: larger;
+    background-color: black;
+    color: cadetblue;
+    border: none;
+    border-radius: 10px;
+
+}
