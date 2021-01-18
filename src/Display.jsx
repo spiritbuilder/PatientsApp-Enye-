@@ -33,8 +33,8 @@ function paginate(items, pageNumber, pageSize){
     .slice(startIndex)
     .take(pageSize)
     .value();
-console.log(pageSize)
-    console.log(check)
+//console.log(pageSize)
+   // console.log(check)
  
     return _(items)
              .slice(startIndex)
@@ -43,7 +43,7 @@ console.log(pageSize)
  }
 
 
-console.log(patients);
+//console.log(patients);
 
 
 

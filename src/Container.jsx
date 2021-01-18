@@ -14,7 +14,7 @@ state={
 
 componentDidMount(){
 this.makeApiCall();
-console.log("this is component did mount",this.state)
+//console.log("this is component did mount",this.state)
 }
 handleClick=(e)=>{
     this.handleSearch(this.state.searchvalue, this.state.filter1,this.state.filter2)
@@ -23,7 +23,7 @@ handleChange = e =>{
     
     this.setState({searchvalue: e.target.value})
     this.handleSearch(e.target.value, this.state.filter1,this.state.filter2)
-    console.log(this.state.searchvalue);
+    //console.log(this.state.searchvalue);
      
     
 }
@@ -61,12 +61,12 @@ handleSearch= (searchvalue, filter1, filter2)=>{
 handlegender=(e)=>{
     this.setState({filter1: e.target.value});
     this.handleSearch(this.state.searchvalue, e.target.value,this.state.filter2)
-    console.log(this.state);
+    //console.log(this.state);
 }
 handlepayment=(e)=>{
     this.setState({filter2: e.target.value})
     this.handleSearch(this.state.searchvalue, this.state.filter1,e.target.value)
-    console.log(this.state);
+    //console.log(this.state);
 }
 makeApiCall = async ()=>{
 const j  = await axios.get("https://api.enye.tech/v1/challenge/records");
