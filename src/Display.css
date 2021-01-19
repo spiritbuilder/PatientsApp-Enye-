@@ -1,15 +1,38 @@
 
 .topholder{
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
     align-items: center;
-    width: 80%;
-  
-    
-    
-    
+    width: 100%; 
+}
+.resultstop{
+    position: sticky;
+    position: -webkit-sticky;
+    margin-top: 10px;
+    top: 169px;
+    width: 90%;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* background-color: white; */
+    z-index: 3;
+
+}
+.tshow{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+}
+.stage{
+    position: relative;
+    margin-top: 160px;
+    left: 0;
 }
 
 .results{
@@ -17,12 +40,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    background-color: white;
+    width: 100%;
     
     
     
 }
 h3{
     color:darkblue;
+    text-align: center;
 }
 @media only screen and (max-width: 765px) {
     h3{
@@ -30,12 +57,23 @@ h3{
         font-weight: 300;
         color:darkblue;
     }
+    .resultstop{
+        top: 125px;
+    }
     .results{
         width: 100%;
     }
     .pagelabel{
         width:100px;
         font-size: small;
+    }
+    .stage{
+        position: relative;
+        margin-top: 110px;
+        left: 0;
+    }
+    .tshow{
+        margin: 50px;
     }
   }
   

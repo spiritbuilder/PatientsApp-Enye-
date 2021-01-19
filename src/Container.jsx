@@ -77,7 +77,7 @@ filtered:j.data.records.profiles})
     render() {
         
         return (
-            <div >
+            <div className="top">
                 <div className="header">
                     <h1>Patients Records App</h1>
                     <div className="search">
@@ -101,6 +101,7 @@ filtered:j.data.records.profiles})
                     </div>
                     
                 </div>
+                
                 <Display patients={this.state.filtered} />
                 
             </div>

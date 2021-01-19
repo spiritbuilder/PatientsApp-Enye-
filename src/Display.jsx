@@ -51,12 +51,13 @@ function paginate(items, pageNumber, pageSize){
     
     return (
         
-        <div>
+        <div className="stage">
         <div className="results">
-        <h3>All Patients Matching Your Search Criteria</h3>
+          <div className="resultstop">
+          <div><h3>All Patients Matching Your Search Criteria</h3></div>
       <div className="topholder">
       
-      <div className="pagelabel">Page {current} of { Math.ceil(totalCount / pagesize) }</div>
+    <div className="pagelabel">{totalCount===0?"No Results":`Page ${current} of ${ Math.ceil(totalCount / pagesize) }`}</div>
           <div className="pagination">
           <Pagination
         itemsCount={totalCount}
@@ -66,8 +67,10 @@ function paginate(items, pageNumber, pageSize){
           </div>
               
       </div>
+          </div>
+       
+      <div className="tshow"><Shower  group={data} /></div>
       
-      <Shower  group={data} />
       
         
         
