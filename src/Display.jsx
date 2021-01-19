@@ -1,4 +1,4 @@
- import React, {useState, useEffect }from 'react'
+import React, {useState, useEffect }from 'react'
 import "./Display.css"
 import _ from "lodash"
 import Shower from "./Shower"

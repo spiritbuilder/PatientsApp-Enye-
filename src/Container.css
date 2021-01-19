@@ -63,6 +63,18 @@ background-color: white;
     border-radius: 10px;
 
 }
+a{text-align: center;
+    
+    
+    text-decoration: none;
+    padding: 20px;
+    border: orange 4px solid ;
+    background-color: purple;
+    color: white;
+}
+a:hover{
+background-color: brown;
+}
 @media only screen and (max-width: 765px) {
     h1{
         color: darkblue;

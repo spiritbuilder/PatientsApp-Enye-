@@ -103,7 +103,7 @@ filtered:j.data.records.profiles})
                 </div>
                 
                 <Display patients={this.state.filtered} />
-                
+
             </div>
         );
     }

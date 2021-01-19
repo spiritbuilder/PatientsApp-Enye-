@@ -1,40 +1,40 @@
 .pagination {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-   
-    font-size: small;
-  }
-  .pagination div:hover{
-    background-color: orange;
-  }
-  .pagination div {
-    color: white;
-    display: flex;
-    flex-direction: row;
-    padding: 8px;
-    display: block;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    cursor: pointer;
-  
-  }
-  
-  /* Style the active/current link */
-  .pagination div.active {
-    background-color: orange;
-    display: inline;
-  }
-  
-  /* Add a grey background color on mouse-over */
-  .pagination div:not(.active) {
-    background-color: #444444;
-    display: inline;
-  }
-  @media only screen and (max-width: 765px) {
-.pagination{
-  width: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+ 
+  font-size: small;
 }
-  }
+.pagination div:hover{
+  background-color: orange;
+}
+.pagination div {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+
+}
+
+/* Style the active/current link */
+.pagination div.active {
+  background-color: orange;
+  display: inline;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination div:not(.active) {
+  background-color: #444444;
+  display: inline;
+}
+@media only screen and (max-width: 765px) {
+.pagination{
+width: 50%;
+}
+}

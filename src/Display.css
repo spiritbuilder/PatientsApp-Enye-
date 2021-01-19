@@ -13,7 +13,8 @@
     position: -webkit-sticky;
     margin-top: 10px;
     top: 169px;
-    width: 90%;
+    width: 100%;
+    padding: 10px;
     display: flex;
     background-color: white;
     flex-direction: column;
