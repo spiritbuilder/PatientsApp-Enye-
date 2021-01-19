@@ -50,6 +50,14 @@
     
 
 }
+.closebtn{
+    
+    padding:15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
 .modal{
     position: fixed;
     display: none;
@@ -61,7 +69,7 @@
   height: 100%;
   top:0;
   right: 0;
-  overflow: auto; 
+  
   background-color: rgba(0,0,0,0.4);
   
     
@@ -123,6 +131,10 @@
    .patient{ 
        width: 250px;
        margin: 5px;
+   }
+   .modalcontent{
+       
+       width: 100%;
    }
    .avatar{
        padding: 10px;

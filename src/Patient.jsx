@@ -50,7 +50,9 @@ if(document.getElementById(person.Email).style.display==="flex"){
     <div className="details"><span>PaymentMethod:</span> {person.PaymentMethod}</div>
                         
                     </div>
+                    <div className="closebtn">
                     <button className="close" onClick={toggleModal}>Close</button>
+                    </div>
                     </div>
                     
                     </div>
